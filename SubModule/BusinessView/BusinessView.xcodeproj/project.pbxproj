@@ -15,6 +15,8 @@
 		184B59871FE90842006733DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B59861FE90842006733DD /* Assets.xcassets */; };
 		184B59881FE90883006733DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B59861FE90842006733DD /* Assets.xcassets */; };
 		184B598A1FE90E2A006733DD /* CommonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184B598B1FE90E2A006733DD /* CommonKit.framework */; };
+		776C47961FE95C9C0043B5CA /* TestController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 184B59731FE8FCAD006733DD /* TestController.xib */; };
+		776C47971FE95CA00043B5CA /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 184B59861FE90842006733DD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -218,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776C47961FE95C9C0043B5CA /* TestController.xib in Sources */,
+				776C47971FE95CA00043B5CA /* Assets.xcassets in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,9 @@
 @implementation TestController
 
 - (instancetype)init {
-    self = [super initWithNibName:@"TestController" bundle:nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"BusinessBundle" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:path];
+    self = [super initWithNibName:@"TestController" bundle:bundle];
     if (self) {
         return self;
     }

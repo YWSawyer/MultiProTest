@@ -15,6 +15,7 @@
 		776C47671FE7F9F30043B5CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776C47661FE7F9F30043B5CA /* Assets.xcassets */; };
 		776C476A1FE7F9F30043B5CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776C47681FE7F9F30043B5CA /* LaunchScreen.storyboard */; };
 		776C476D1FE7F9F30043B5CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C476C1FE7F9F30043B5CA /* main.m */; };
+		776C47951FE95BD40043B5CA /* BusinessBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 776C47941FE95BD40043B5CA /* BusinessBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		776C47691FE7F9F30043B5CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776C476B1FE7F9F30043B5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776C476C1FE7F9F30043B5CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		776C47941FE95BD40043B5CA /* BusinessBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BusinessBundle.bundle; path = "../../Library/Developer/Xcode/DerivedData/MultiPro-crivkzskbokpbjbfxxoqoumozxdt/Build/Products/Debug-iphoneos/BusinessBundle.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		776C47511FE7F9F30043B5CA = {
 			isa = PBXGroup;
 			children = (
+				776C47941FE95BD40043B5CA /* BusinessBundle.bundle */,
 				776C475C1FE7F9F30043B5CA /* mainPro */,
 				776C475B1FE7F9F30043B5CA /* Products */,
 				184B59531FE8EE86006733DD /* Frameworks */,
@@ -145,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776C47951FE95BD40043B5CA /* BusinessBundle.bundle in Resources */,
 				776C476A1FE7F9F30043B5CA /* LaunchScreen.storyboard in Resources */,
 				776C47671FE7F9F30043B5CA /* Assets.xcassets in Resources */,
 				776C47651FE7F9F30043B5CA /* Main.storyboard in Resources */,
