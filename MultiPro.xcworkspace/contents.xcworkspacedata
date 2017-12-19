@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SubModule/CommonKit/CommonKit.xcodeproj">
+      location = "group:SubModule/BusinessView/BusinessView.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:mainPro.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SubModule/CommonKit/CommonKit.xcodeproj">
    </FileRef>
 </Workspace>

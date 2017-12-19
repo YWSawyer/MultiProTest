@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "CommonKit"
-
+#import <CommonKit/CommonKit.h>
+#import <BusinessView/BusinessView.h>
 @interface ViewController ()
 
 @end
@@ -18,9 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIView *testView = [[UIView alloc]initWithFrame:CGRectMake(0, 100, kscreenW, 100)];
+    testView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:testView];
     
+    StringTest *testStr = [StringTest new];
+    [testStr printMyStr];
 }
 
+- (IBAction)testAction:(UIButton *)sender {
+    TestController *vc = [TestController new];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

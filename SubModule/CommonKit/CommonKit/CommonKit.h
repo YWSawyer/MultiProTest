@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#improt "CommonDefine.h"
-#improt "StringTest.h"
+#import "CommonDefine.h"
+#import "StringTest.h"
 
 //! Project version number for CommonKit.
 FOUNDATION_EXPORT double CommonKitVersionNumber;

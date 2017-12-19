@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184B595A1FE8F896006733DD /* CommonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184B595B1FE8F896006733DD /* CommonKit.framework */; };
+		184B598C1FE917E0006733DD /* BusinessView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184B598D1FE917E0006733DD /* BusinessView.framework */; };
 		776C475F1FE7F9F30043B5CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C475E1FE7F9F30043B5CA /* AppDelegate.m */; };
 		776C47621FE7F9F30043B5CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C47611FE7F9F30043B5CA /* ViewController.m */; };
 		776C47651FE7F9F30043B5CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776C47631FE7F9F30043B5CA /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184B595B1FE8F896006733DD /* CommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		184B598D1FE917E0006733DD /* BusinessView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BusinessView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		776C475A1FE7F9F30043B5CA /* mainPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mainPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776C475D1FE7F9F30043B5CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		776C475E1FE7F9F30043B5CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184B598C1FE917E0006733DD /* BusinessView.framework in Frameworks */,
+				184B595A1FE8F896006733DD /* CommonKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184B59531FE8EE86006733DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				184B598D1FE917E0006733DD /* BusinessView.framework */,
+				184B595B1FE8F896006733DD /* CommonKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		776C47511FE7F9F30043B5CA = {
 			isa = PBXGroup;
 			children = (
 				776C475C1FE7F9F30043B5CA /* mainPro */,
 				776C475B1FE7F9F30043B5CA /* Products */,
+				184B59531FE8EE86006733DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,12 +295,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/SubModule/";
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/SubModule";
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/SubModule/CommonKit",
+					"${PROJECT_DIR}/SubModule/BusinessView",
+				);
 				INFOPLIST_FILE = mainPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.epower.mainPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -293,12 +316,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/SubModule/";
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/SubModule";
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/SubModule/CommonKit",
+					"${PROJECT_DIR}/SubModule/BusinessView",
+				);
 				INFOPLIST_FILE = mainPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.epower.mainPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

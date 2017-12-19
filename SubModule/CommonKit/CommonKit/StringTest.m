@@ -10,7 +10,7 @@
 
 @implementation StringTest
 
-- (void)printMySt {
+- (void)printMyStr {
     NSLog(@"printMySt...");
 }
 
