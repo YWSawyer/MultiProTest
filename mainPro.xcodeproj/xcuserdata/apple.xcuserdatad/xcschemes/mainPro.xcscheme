@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "776C47591FE7F9F30043B5CA"
-               BuildableName = "mainPro.app"
-               BlueprintName = "mainPro"
-               ReferencedContainer = "container:mainPro.xcodeproj">
+               BlueprintIdentifier = "776C477C1FE7FAA10043B5CA"
+               BuildableName = "CommonKit.framework"
+               BlueprintName = "CommonKit"
+               ReferencedContainer = "container:SubModule/CommonKit/CommonKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -46,6 +46,20 @@
                BuildableName = "BusinessBundle.bundle"
                BlueprintName = "BusinessBundle"
                ReferencedContainer = "container:SubModule/BusinessView/BusinessView.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "776C47591FE7F9F30043B5CA"
+               BuildableName = "mainPro.app"
+               BlueprintName = "mainPro"
+               ReferencedContainer = "container:mainPro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

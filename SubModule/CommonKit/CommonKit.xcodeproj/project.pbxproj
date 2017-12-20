@@ -111,6 +111,7 @@
 				776C477A1FE7FAA10043B5CA /* Headers */,
 				776C477B1FE7FAA10043B5CA /* Resources */,
 				854289F56D6E697DB19B5C10 /* [CP] Copy Pods Resources */,
+				18074F521FEA6AE5006DD7AB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -164,6 +165,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18074F521FEA6AE5006DD7AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 把编译后的.framework和第三方库/bundle文件拷贝到 app 的 ModuleFrameworks 目录下\nFMK_NAME=${PROJECT_NAME}\nINSTALL_DIR=${SRCROOT}/../../../MultiProTest/ModuleFrameworks/${PROJECT_NAME}\n\nditto \"${BUILT_PRODUCTS_DIR}/${FMK_NAME}.framework\" \"${INSTALL_DIR}/${FMK_NAME}.framework\"";
+		};
 		63800FEB67964579F36D0F6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

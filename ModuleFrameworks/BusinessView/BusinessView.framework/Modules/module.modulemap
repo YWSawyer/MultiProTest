@@ -1,0 +1,6 @@
+framework module BusinessView {
+  umbrella header "BusinessView.h"
+
+  export *
+  module * { export * }
+}
