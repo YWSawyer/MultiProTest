@@ -11,6 +11,7 @@
 		18074F131FEA00B4006DD7AB /* baby_avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18074F101FEA00B4006DD7AB /* baby_avatar@3x.png */; };
 		18074F141FEA00B4006DD7AB /* baby_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18074F111FEA00B4006DD7AB /* baby_avatar@2x.png */; };
 		18074F151FEA00B4006DD7AB /* baby_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18074F111FEA00B4006DD7AB /* baby_avatar@2x.png */; };
+		18074F3D1FEA4D8B006DD7AB /* libPods-mainPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18074F3E1FEA4D8B006DD7AB /* libPods-mainPro.a */; };
 		184B596B1FE8FC52006733DD /* BusinessView.h in Headers */ = {isa = PBXBuildFile; fileRef = 184B59691FE8FC52006733DD /* BusinessView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184B59741FE8FCAD006733DD /* TestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 184B59711FE8FCAD006733DD /* TestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184B59751FE8FCAD006733DD /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B59721FE8FCAD006733DD /* TestController.m */; };
@@ -19,11 +20,13 @@
 		184B59871FE90842006733DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B59861FE90842006733DD /* Assets.xcassets */; };
 		184B59881FE90883006733DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B59861FE90842006733DD /* Assets.xcassets */; };
 		184B598A1FE90E2A006733DD /* CommonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184B598B1FE90E2A006733DD /* CommonKit.framework */; };
+		E5AD21FA43AD88A284C070AD /* libPods-BusinessView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3498B599072DD0027DB3E10D /* libPods-BusinessView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18074F101FEA00B4006DD7AB /* baby_avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baby_avatar@3x.png"; sourceTree = "<group>"; };
 		18074F111FEA00B4006DD7AB /* baby_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baby_avatar@2x.png"; sourceTree = "<group>"; };
+		18074F3E1FEA4D8B006DD7AB /* libPods-mainPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-mainPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B59661FE8FC52006733DD /* BusinessView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BusinessView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B59691FE8FC52006733DD /* BusinessView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessView.h; sourceTree = "<group>"; };
 		184B596A1FE8FC52006733DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +37,9 @@
 		184B597F1FE904E4006733DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184B59861FE90842006733DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184B598B1FE90E2A006733DD /* CommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3498B599072DD0027DB3E10D /* libPods-BusinessView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BusinessView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		648F6612375034366A3419EF /* Pods-BusinessView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessView.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-BusinessView/Pods-BusinessView.debug.xcconfig"; sourceTree = "<group>"; };
+		8D90CC56F764E6585BA01CD7 /* Pods-BusinessView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessView.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-BusinessView/Pods-BusinessView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18074F3D1FEA4D8B006DD7AB /* libPods-mainPro.a in Frameworks */,
 				184B598A1FE90E2A006733DD /* CommonKit.framework in Frameworks */,
+				E5AD21FA43AD88A284C070AD /* libPods-BusinessView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073D5BD52E3341162C78FCED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				648F6612375034366A3419EF /* Pods-BusinessView.debug.xcconfig */,
+				8D90CC56F764E6585BA01CD7 /* Pods-BusinessView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		184B595C1FE8FC52006733DD = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +79,7 @@
 				184B597E1FE904E4006733DD /* BusinessBundle */,
 				184B59671FE8FC52006733DD /* Products */,
 				184B59891FE90E2A006733DD /* Frameworks */,
+				073D5BD52E3341162C78FCED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +118,9 @@
 		184B59891FE90E2A006733DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18074F3E1FEA4D8B006DD7AB /* libPods-mainPro.a */,
 				184B598B1FE90E2A006733DD /* CommonKit.framework */,
+				3498B599072DD0027DB3E10D /* libPods-BusinessView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,10 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184B596E1FE8FC52006733DD /* Build configuration list for PBXNativeTarget "BusinessView" */;
 			buildPhases = (
+				85EAC0762DEFDAD675C1905C /* [CP] Check Pods Manifest.lock */,
 				184B59611FE8FC52006733DD /* Sources */,
 				184B59621FE8FC52006733DD /* Frameworks */,
 				184B59631FE8FC52006733DD /* Headers */,
 				184B59641FE8FC52006733DD /* Resources */,
+				A32227B813BF1FEC85516F67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +238,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85EAC0762DEFDAD675C1905C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A32227B813BF1FEC85516F67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-BusinessView/Pods-BusinessView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		184B59611FE8FC52006733DD /* Sources */ = {
@@ -348,6 +403,7 @@
 		};
 		184B596F1FE8FC52006733DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 648F6612375034366A3419EF /* Pods-BusinessView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -369,6 +425,7 @@
 		};
 		184B59701FE8FC52006733DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D90CC56F764E6585BA01CD7 /* Pods-BusinessView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

@@ -14,13 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - GVUserDefaults (1.0.2)
+  - SDWebImage (4.2.2):
+    - SDWebImage/Core (= 4.2.2)
+  - SDWebImage/Core (4.2.2)
 
 DEPENDENCIES:
   - AFNetworking
+  - GVUserDefaults
+  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
 
-PODFILE CHECKSUM: a9dd1ea39cfb37d52c6738915de1f80036d54d8f
+PODFILE CHECKSUM: 0cd26ba9cd79cb4d86bd800baf608afd2efcf36b
 
 COCOAPODS: 1.2.0

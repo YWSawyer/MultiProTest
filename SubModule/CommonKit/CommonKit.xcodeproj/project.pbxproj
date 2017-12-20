@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13BFF0800D3AAE6F6F0001A7 /* libPods-CommonKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCA9434EDE5006D69BD1A8B /* libPods-CommonKit.a */; };
 		776C47821FE7FAA10043B5CA /* CommonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 776C47801FE7FAA10043B5CA /* CommonKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		776C478B1FE7FBDF0043B5CA /* StringTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 776C47891FE7FBDF0043B5CA /* StringTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		776C478C1FE7FBDF0043B5CA /* StringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C478A1FE7FBDF0043B5CA /* StringTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18074F4D1FEA575E006DD7AB /* libPods-mainPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-mainPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B86F4061108B5B9540D8D0 /* Pods-CommonKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonKit.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-CommonKit/Pods-CommonKit.release.xcconfig"; sourceTree = "<group>"; };
 		776C477D1FE7FAA10043B5CA /* CommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		776C47801FE7FAA10043B5CA /* CommonKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonKit.h; sourceTree = "<group>"; };
 		776C47811FE7FAA10043B5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776C47881FE7FB130043B5CA /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
 		776C47891FE7FBDF0043B5CA /* StringTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringTest.h; sourceTree = "<group>"; };
 		776C478A1FE7FBDF0043B5CA /* StringTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringTest.m; sourceTree = "<group>"; };
+		7DCA9434EDE5006D69BD1A8B /* libPods-CommonKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommonKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C243362A623D102FF550A853 /* Pods-CommonKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonKit.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-CommonKit/Pods-CommonKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BFF0800D3AAE6F6F0001A7 /* libPods-CommonKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18074F4B1FEA575E006DD7AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18074F4D1FEA575E006DD7AB /* libPods-mainPro.a */,
+				7DCA9434EDE5006D69BD1A8B /* libPods-CommonKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		776C47731FE7FAA10043B5CA = {
 			isa = PBXGroup;
 			children = (
 				776C477F1FE7FAA10043B5CA /* CommonKit */,
 				776C477E1FE7FAA10043B5CA /* Products */,
+				18074F4B1FEA575E006DD7AB /* Frameworks */,
+				E9A834424D517188D88322C5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +77,15 @@
 			path = CommonKit;
 			sourceTree = "<group>";
 		};
+		E9A834424D517188D88322C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C243362A623D102FF550A853 /* Pods-CommonKit.debug.xcconfig */,
+				26B86F4061108B5B9540D8D0 /* Pods-CommonKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -79,10 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 776C47851FE7FAA10043B5CA /* Build configuration list for PBXNativeTarget "CommonKit" */;
 			buildPhases = (
+				63800FEB67964579F36D0F6D /* [CP] Check Pods Manifest.lock */,
 				776C47781FE7FAA10043B5CA /* Sources */,
 				776C47791FE7FAA10043B5CA /* Frameworks */,
 				776C477A1FE7FAA10043B5CA /* Headers */,
 				776C477B1FE7FAA10043B5CA /* Resources */,
+				854289F56D6E697DB19B5C10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +162,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63800FEB67964579F36D0F6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		854289F56D6E697DB19B5C10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-CommonKit/Pods-CommonKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		776C47781FE7FAA10043B5CA /* Sources */ = {
@@ -259,6 +320,7 @@
 		};
 		776C47861FE7FAA10043B5CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C243362A623D102FF550A853 /* Pods-CommonKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -267,7 +329,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CommonKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -283,6 +344,7 @@
 		};
 		776C47871FE7FAA10043B5CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B86F4061108B5B9540D8D0 /* Pods-CommonKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +353,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CommonKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

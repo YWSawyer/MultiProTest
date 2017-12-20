@@ -42,20 +42,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "776C477C1FE7FAA10043B5CA"
-               BuildableName = "CommonKit.framework"
-               BlueprintName = "CommonKit"
-               ReferencedContainer = "container:SubModule/CommonKit/CommonKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "184B597C1FE904E4006733DD"
                BuildableName = "BusinessBundle.bundle"
                BlueprintName = "BusinessBundle"

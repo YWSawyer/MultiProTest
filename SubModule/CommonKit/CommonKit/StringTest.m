@@ -7,11 +7,13 @@
 //
 
 #import "StringTest.h"
+#import <AFNetWorking/AFNetWorking.h>
 
 @implementation StringTest
 
 - (void)printMyStr {
     NSLog(@"printMySt...");
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 }
 
 @end
