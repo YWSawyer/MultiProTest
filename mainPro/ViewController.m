@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <CommonKit/CommonKit.h>
 #import <BusinessView/BusinessView.h>
+#import <AFNetWorking/AFNetWorking.h>
 @interface ViewController ()
 
 @end
@@ -24,6 +25,8 @@
     
     StringTest *testStr = [StringTest new];
     [testStr printMyStr];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 }
 
 - (IBAction)testAction:(UIButton *)sender {
