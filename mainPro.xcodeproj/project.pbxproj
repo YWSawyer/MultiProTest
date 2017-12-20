@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18074F051FE9FF1B006DD7AB /* BusinessBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18074F041FE9FF1B006DD7AB /* BusinessBundle.bundle */; };
 		184B595A1FE8F896006733DD /* CommonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184B595B1FE8F896006733DD /* CommonKit.framework */; };
 		184B598C1FE917E0006733DD /* BusinessView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184B598D1FE917E0006733DD /* BusinessView.framework */; };
 		776C475F1FE7F9F30043B5CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C475E1FE7F9F30043B5CA /* AppDelegate.m */; };
@@ -15,10 +16,10 @@
 		776C47671FE7F9F30043B5CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776C47661FE7F9F30043B5CA /* Assets.xcassets */; };
 		776C476A1FE7F9F30043B5CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776C47681FE7F9F30043B5CA /* LaunchScreen.storyboard */; };
 		776C476D1FE7F9F30043B5CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C476C1FE7F9F30043B5CA /* main.m */; };
-		776C47951FE95BD40043B5CA /* BusinessBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 776C47941FE95BD40043B5CA /* BusinessBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18074F041FE9FF1B006DD7AB /* BusinessBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BusinessBundle.bundle; path = "../../Library/Developer/Xcode/DerivedData/MultiPro-bsqbionwaclfjyfkzwjjijurxjee/Build/Products/Debug-iphonesimulator/BusinessBundle.bundle"; sourceTree = "<group>"; };
 		184B595B1FE8F896006733DD /* CommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B598D1FE917E0006733DD /* BusinessView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BusinessView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		776C475A1FE7F9F30043B5CA /* mainPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mainPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,7 +32,6 @@
 		776C47691FE7F9F30043B5CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776C476B1FE7F9F30043B5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776C476C1FE7F9F30043B5CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		776C47941FE95BD40043B5CA /* BusinessBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BusinessBundle.bundle; path = "../../Library/Developer/Xcode/DerivedData/MultiPro-crivkzskbokpbjbfxxoqoumozxdt/Build/Products/Debug-iphoneos/BusinessBundle.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 		776C47511FE7F9F30043B5CA = {
 			isa = PBXGroup;
 			children = (
-				776C47941FE95BD40043B5CA /* BusinessBundle.bundle */,
+				18074F041FE9FF1B006DD7AB /* BusinessBundle.bundle */,
 				776C475C1FE7F9F30043B5CA /* mainPro */,
 				776C475B1FE7F9F30043B5CA /* Products */,
 				184B59531FE8EE86006733DD /* Frameworks */,
@@ -148,7 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776C47951FE95BD40043B5CA /* BusinessBundle.bundle in Resources */,
+				18074F051FE9FF1B006DD7AB /* BusinessBundle.bundle in Resources */,
 				776C476A1FE7F9F30043B5CA /* LaunchScreen.storyboard in Resources */,
 				776C47671FE7F9F30043B5CA /* Assets.xcassets in Resources */,
 				776C47651FE7F9F30043B5CA /* Main.storyboard in Resources */,

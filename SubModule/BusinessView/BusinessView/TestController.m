@@ -30,7 +30,6 @@
     // Do any additional setup after loading the view from its nib.
     StringTest *testStr = [StringTest new];
     [testStr printMyStr];
-    self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)didReceiveMemoryWarning {
