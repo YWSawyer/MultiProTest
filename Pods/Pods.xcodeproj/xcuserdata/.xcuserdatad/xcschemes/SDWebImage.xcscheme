@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '29CE50DE4DBCEEDF8723C3143754A0FC'
-               BlueprintName = 'GVUserDefaults-iOS11.0'
+               BlueprintIdentifier = 'D38CB7C28DDB2069F32BDC348D8C43D1'
+               BlueprintName = 'SDWebImage'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libGVUserDefaults-iOS11.0.a'>
+               BuildableName = 'libSDWebImage.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

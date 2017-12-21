@@ -14,7 +14,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18074F4D1FEA575E006DD7AB /* libPods-mainPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-mainPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B86F4061108B5B9540D8D0 /* Pods-CommonKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonKit.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-CommonKit/Pods-CommonKit.release.xcconfig"; sourceTree = "<group>"; };
 		776C477D1FE7FAA10043B5CA /* CommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		776C47801FE7FAA10043B5CA /* CommonKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonKit.h; sourceTree = "<group>"; };
@@ -41,7 +40,6 @@
 		18074F4B1FEA575E006DD7AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18074F4D1FEA575E006DD7AB /* libPods-mainPro.a */,
 				7DCA9434EDE5006D69BD1A8B /* libPods-CommonKit.a */,
 			);
 			name = Frameworks;

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		184B595A1FE8F896006733DD /* CommonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184B595B1FE8F896006733DD /* CommonKit.framework */; };
-		184B598C1FE917E0006733DD /* BusinessView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184B598D1FE917E0006733DD /* BusinessView.framework */; };
+		18383F191FEB4FF6002079D8 /* BusinessView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18383F181FEB4FF6002079D8 /* BusinessView.framework */; };
+		18383F1B1FEB5000002079D8 /* CommonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18383F1A1FEB5000002079D8 /* CommonKit.framework */; };
 		186C0EBC1FEA6D3A007CEEAD /* BusinessBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 186C0EBB1FEA6D3A007CEEAD /* BusinessBundle.bundle */; };
 		776C475F1FE7F9F30043B5CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C475E1FE7F9F30043B5CA /* AppDelegate.m */; };
 		776C47621FE7F9F30043B5CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C47611FE7F9F30043B5CA /* ViewController.m */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		184B595B1FE8F896006733DD /* CommonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		184B598D1FE917E0006733DD /* BusinessView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BusinessView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18383F181FEB4FF6002079D8 /* BusinessView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessView.framework; path = ModuleFrameworks/BusinessView/BusinessView.framework; sourceTree = "<group>"; };
+		18383F1A1FEB5000002079D8 /* CommonKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonKit.framework; path = ModuleFrameworks/CommonKit/CommonKit.framework; sourceTree = "<group>"; };
 		186C0EBB1FEA6D3A007CEEAD /* BusinessBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BusinessBundle.bundle; path = ModuleFrameworks/BusinessView/BusinessBundle.bundle; sourceTree = "<group>"; };
 		4F89913EC2A283DF67A8ECEB /* Pods-mainPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mainPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mainPro/Pods-mainPro.debug.xcconfig"; sourceTree = "<group>"; };
 		776C475A1FE7F9F30043B5CA /* mainPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mainPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184B598C1FE917E0006733DD /* BusinessView.framework in Frameworks */,
-				184B595A1FE8F896006733DD /* CommonKit.framework in Frameworks */,
+				18383F1B1FEB5000002079D8 /* CommonKit.framework in Frameworks */,
+				18383F191FEB4FF6002079D8 /* BusinessView.framework in Frameworks */,
 				C9C8BF395671B5B4D5596A91 /* libPods-mainPro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,8 +55,8 @@
 		184B59531FE8EE86006733DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				184B598D1FE917E0006733DD /* BusinessView.framework */,
-				184B595B1FE8F896006733DD /* CommonKit.framework */,
+				18383F1A1FEB5000002079D8 /* CommonKit.framework */,
+				18383F181FEB4FF6002079D8 /* BusinessView.framework */,
 				D85D0624008336481C94F78E /* libPods-mainPro.a */,
 			);
 			name = Frameworks;
@@ -368,7 +368,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5PY75XDDR;
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/SubModule";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/SubModule",
+					"$(PROJECT_DIR)/ModuleFrameworks/BusinessView",
+					"$(PROJECT_DIR)/ModuleFrameworks/CommonKit",
+				);
 				HEADER_SEARCH_PATHS = (
 					"${PROJECT_DIR}/SubModule/CommonKit",
 					"${PROJECT_DIR}/SubModule/BusinessView",
@@ -392,7 +396,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5PY75XDDR;
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/SubModule";
+				FRAMEWORK_SEARCH_PATHS = (
+					"${PROJECT_DIR}/SubModule",
+					"$(PROJECT_DIR)/ModuleFrameworks/BusinessView",
+					"$(PROJECT_DIR)/ModuleFrameworks/CommonKit",
+				);
 				HEADER_SEARCH_PATHS = (
 					"${PROJECT_DIR}/SubModule/CommonKit",
 					"${PROJECT_DIR}/SubModule/BusinessView",

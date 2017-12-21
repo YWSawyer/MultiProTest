@@ -8,6 +8,8 @@
 
 #import "TestController.h"
 #import <CommonKit/CommonKit.h>
+#import <AFNetWorking/AFNetWorking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface TestController ()
 
@@ -30,6 +32,9 @@
     // Do any additional setup after loading the view from its nib.
     StringTest *testStr = [StringTest new];
     [testStr printMyStr];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    UIImageView *imageView = [UIImageView new];
+    [imageView sd_setImageWithURL:nil placeholderImage:nil];
 }
 
 - (void)didReceiveMemoryWarning {
