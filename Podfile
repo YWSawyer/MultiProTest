@@ -26,8 +26,8 @@ target 'mainPro' do
   
   pods
   #platform :ios, '7.0'
-  pod 'GVUserDefaults'
-  pod 'AFNetworking'
+  #pod 'GVUserDefaults'
+  #pod 'AFNetworking'
 
 
 end
@@ -42,7 +42,7 @@ target 'CommonKit' do
     
     pods
     #platform :ios, '7.0'
-    pod 'AFNetworking'
+    #pod 'AFNetworking'
     
     
 end
@@ -55,7 +55,7 @@ target 'BusinessView' do
     
     pods
     #platform :ios, '7.0'
-    pod 'SDWebImage'
+    #pod 'SDWebImage'
     
     
 end
