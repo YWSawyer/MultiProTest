@@ -11,7 +11,6 @@
 		18074F131FEA00B4006DD7AB /* baby_avatar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18074F101FEA00B4006DD7AB /* baby_avatar@3x.png */; };
 		18074F141FEA00B4006DD7AB /* baby_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18074F111FEA00B4006DD7AB /* baby_avatar@2x.png */; };
 		18074F151FEA00B4006DD7AB /* baby_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18074F111FEA00B4006DD7AB /* baby_avatar@2x.png */; };
-		18074F3D1FEA4D8B006DD7AB /* libPods-mainPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18074F3E1FEA4D8B006DD7AB /* libPods-mainPro.a */; };
 		184B596B1FE8FC52006733DD /* BusinessView.h in Headers */ = {isa = PBXBuildFile; fileRef = 184B59691FE8FC52006733DD /* BusinessView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184B59741FE8FCAD006733DD /* TestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 184B59711FE8FCAD006733DD /* TestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184B59751FE8FCAD006733DD /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B59721FE8FCAD006733DD /* TestController.m */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		18074F101FEA00B4006DD7AB /* baby_avatar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baby_avatar@3x.png"; sourceTree = "<group>"; };
 		18074F111FEA00B4006DD7AB /* baby_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baby_avatar@2x.png"; sourceTree = "<group>"; };
-		18074F3E1FEA4D8B006DD7AB /* libPods-mainPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-mainPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B59661FE8FC52006733DD /* BusinessView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BusinessView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184B59691FE8FC52006733DD /* BusinessView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessView.h; sourceTree = "<group>"; };
 		184B596A1FE8FC52006733DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18074F3D1FEA4D8B006DD7AB /* libPods-mainPro.a in Frameworks */,
 				184B598A1FE90E2A006733DD /* CommonKit.framework in Frameworks */,
 				E5AD21FA43AD88A284C070AD /* libPods-BusinessView.a in Frameworks */,
 			);
@@ -118,7 +115,6 @@
 		184B59891FE90E2A006733DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				18074F3E1FEA4D8B006DD7AB /* libPods-mainPro.a */,
 				184B598B1FE90E2A006733DD /* CommonKit.framework */,
 				3498B599072DD0027DB3E10D /* libPods-BusinessView.a */,
 			);
@@ -368,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -420,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -443,7 +439,9 @@
 				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../CommonKit";
 				INFOPLIST_FILE = BusinessView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beidougx.BusinessView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -465,7 +463,9 @@
 				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/../CommonKit";
 				INFOPLIST_FILE = BusinessView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beidougx.BusinessView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -477,14 +477,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = NO;
-				DEVELOPMENT_TEAM = H5PY75XDDR;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BusinessBundle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beidougx.BusinessBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -495,14 +499,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = NO;
-				DEVELOPMENT_TEAM = H5PY75XDDR;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BusinessBundle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beidougx.BusinessBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;

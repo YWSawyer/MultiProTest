@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		yxvKuzsB4OY65fPrVlVXbdRJzCE=
+		trdqQQtWSbeg9DdyaIvE23u42Fk=
 		</data>
 		<key>Headers/BusinessView.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WGdibUHbUK+JgTa6zewOK+aS6A0=
+		yFUE0YaceYdq0paR9cY5NmqT8gQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>TestController.nib</key>
 		<data>
-		3yGg4mU1aLHWOocftpAM5vNj9RI=
+		/E9qcTPSN40+5xC3XFpdGOeMyy8=
 		</data>
 		<key>baby_avatar@2x.png</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yxvKuzsB4OY65fPrVlVXbdRJzCE=
+			trdqQQtWSbeg9DdyaIvE23u42Fk=
 			</data>
 			<key>hash2</key>
 			<data>
-			+tI8vM1n2CRsUO8LD33mCLMyui9022TRbw4NBE29HUI=
+			Qw1yR4vj3V9tcnQDgh/BjJZHsu3hPcjVy6pssTe3kGM=
 			</data>
 		</dict>
 		<key>Headers/BusinessView.h</key>
@@ -87,11 +87,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3yGg4mU1aLHWOocftpAM5vNj9RI=
+			/E9qcTPSN40+5xC3XFpdGOeMyy8=
 			</data>
 			<key>hash2</key>
 			<data>
-			C+8KMCVHzx7Y0jvi+yOaDTfnHcu962j419vxJVTtCSo=
+			EgQ+YiGS9w7FpQvvTOV6odM4Sv3fOZUJwZ+VBlXSY8I=
 			</data>
 		</dict>
 		<key>baby_avatar@2x.png</key>
